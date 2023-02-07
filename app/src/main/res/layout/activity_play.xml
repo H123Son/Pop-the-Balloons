@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Written by Abhishek Jajal for CS6326.001, assignment 6, starting November  10, 2019.
+NetID: apj180001
+Layout for PlayActivity
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/instructionLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/instructionTextSize" />
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="@dimen/instructionTextSize" />
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seconds Left: 0"
+            android:textSize="@dimen/instructionTextSize" />
+
+    </LinearLayout>
+
+    <com.example.apj180001asg6.PlayGround
+        android:id="@+id/playGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:foreground="@drawable/playground_border"
+        android:keepScreenOn="true" />
+
+</LinearLayout>
